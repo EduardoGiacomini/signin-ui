@@ -7,53 +7,60 @@
 
     <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,600" rel="stylesheet">
     <link rel="stylesheet" href="styles/style.css">
-    <link rel="shortcut icon" type="image/svg" href="assets/favicon.svg">
+    <link rel="shortcut icon" type="image/png" href="assets/favicon.png">
 
     <title>Signin-UI &mdash; Simple template for signin</title>
 </head>
 
 <body>
 
-    <div class="container">
+    <main class="main">
+        <div class="container">
 
-        <div class="container__primary">
+            <div class="container__primary"></div>
 
-        </div>
+            <div class="container__secondary">
+                <div class="logo-box u-center-box">
+                    <img src="assets/logo.svg" alt="Signin-UI Logo" class="logo-box__logo">
+                </div>
 
-        <div class="container__secondary">
-            <div class="logo-box u-center-box">
-                <img src="assets/favicon.svg" alt="Signin-UI Logo" class="logo-box__logo">
+                <div class="text-box u-center-text">
+                    <h2 class="heading-secondary">Sign-in UI</h2>
+                    <p class="paragraph">Let's get started now! Or <a href="#" class="link">create your
+                            account</a> if not registered yet</p>
+                </div>
+
+                <form action="#" class="form-box">
+                    <div class="form-box__group">
+                        <input type="email" class="form-box__input" placeholder="E-mail address" id="email" required>
+                        <label for="email" class="form-box__label">E-mail address</label>
+                    </div>
+
+                    <div class="form-box__group">
+                        <input type="password" class="form-box__input" placeholder="Password" id="password" required>
+                        <label for="password" class="form-box__label">Password</label>
+                    </div>
+
+                    <div class="form-box__group">
+                        <button class="btn btn--primary">Signin</button>
+                    </div>
+
+                    <div class="form-box__group form-box__text u-center-text">
+                        <p class="paragraph">Forgot password? <a href="#" class="link">Reset now</a></p>
+                    </div>
+                </form>
             </div>
 
-            <div class="text-box u-center-text">
-                <h2 class="heading-secondary">Sign-in UI</h2>
-                <p class="paragraph">Let's get started now! Or <a href="#" class="link">create your
-                        account</a> if not registered yet</p>
-            </div>
-
-            <form action="#" class="form-box">
-                <div class="form-box__group">
-                    <input type="email" class="form-box__input" placeholder="E-mail address" id="email" required>
-                    <label for="email" class="form-box__label">E-mail address</label>
-                </div>
-
-                <div class="form-box__group">
-                    <input type="password" class="form-box__input" placeholder="Password" id="password" required>
-                    <label for="password" class="form-box__label">Password</label>
-                </div>
-
-                <div class="form-box__group">
-                    <button class="btn btn--primary">Signin</button>
-                </div>
-
-                <div class="form-box__group form-box__text u-center-text">
-                    <p class="paragraph">Forgot password? <a href="#" class="link">Reset now</a></p>
-                </div>
-            </form>
         </div>
-
-
-    </div>
+        <footer class="footer">
+            <p class="paragraph u-margin-width">
+                Copyright &copy; by <a href="https://github.com/EduardoGiacomini" target="_blank" class="link">Eduardo
+                    Giacomini</a>
+            </p>
+            <a href="https://github.com/EduardoGiacomini/signin-ui" target="_blank" class="u-margin-width"><img src="assets/github-mark-light-32px.png"
+                    alt="GitHub"></a>
+        </footer>
+    </main>
 
 </body>
 

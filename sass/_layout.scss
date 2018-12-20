@@ -1,10 +1,22 @@
-.container {
+.main {
   max-width: 100rem;
   min-height: 50rem;
-  margin: 8rem auto 0 auto;
-  background-color: var(--color-grey-light-3);
+  margin: 8rem auto;
   box-shadow: var(--shadow-dark);
   border-radius: 0.4rem;
+  overflow: hidden;
+}
+
+.footer {
+  padding: 3rem;
+  background-color: rgba(51, 51, 51, 0.7);
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.container {
+  background-color: var(--color-grey-light-3);
   display: flex;
 
   &__primary {
@@ -99,7 +111,7 @@
   }
 
   &__text {
-      color: var(--color-white);
+    color: var(--color-white);
   }
 }
 
@@ -137,10 +149,10 @@
 }
 
 .link {
-    color: var(--color-white);
-    font-weight: 600;
+  color: var(--color-white);
+  font-weight: 600;
 
-    &:hover {
-        text-shadow: var(--shadow-medium);
-    }
+  &:hover {
+    text-shadow: var(--shadow-medium);
+  }
 }
