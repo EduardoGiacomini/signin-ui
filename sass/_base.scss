@@ -1,35 +1,19 @@
 /* _base.scss => initial configurations and declarations */
-
-:root {
-    /* colors */
-    --color-primary: #1c81e0;
-    --color-primary-light: #2998ff;
-    --color-primary-dark: #5643fa;
-
-    --color-black: #000;
-    --color-white: #fff;
-}
-
 *,
 *::after,
 *::before {
-    margin: 0;
-    padding: 0;
-    box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
 }
 
 html {
-    font-size: 62.5%; // 1rem = 10px, 10px / 16px = 62.5%
+  font-size: 62.5%; // 1rem = 10px, 10px / 16px = 62.5%
 }
 
 body {
-    box-sizing: border-box;
-    background-image: linear-gradient(
-        to right bottom,
-        var(--color-primary-light),
-        var(--color-primary-dark));
-    background-size: cover;
-    background-repeat: no-repeat;
-
-    min-height: 100vh;
+  box-sizing: border-box;
+  background-color: var(--color-grey-light-1);
+  
+  min-height: 100vh;
 }
