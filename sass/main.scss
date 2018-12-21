@@ -1,6 +1,7 @@
 /* main.scss => main file of styles */
-@import "base";
-@import "layout";
-@import "typography";
-@import "utilities";
+@import "mixins";
 @import "variables";
+@import "base";
+@import "utilities";
+@import "typography";
+@import "layout";

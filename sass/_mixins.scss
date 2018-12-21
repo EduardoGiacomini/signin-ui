@@ -1,0 +1,36 @@
+/*
+
+Media queries
+
+0 - 600px:          Phone
+601px - 1000px:      Tablet portrait
+1001px - 1200px:     Tablet landscape
+1201px +:           Normal styles apply
+---------------------------------------
+$breakpoint argument choices:
+    - phone
+    - tab-port
+    - tab-land
+
+*/
+
+@mixin respond($breakpoint) {
+  @if $breakpoint == phone {
+    /* 600px */
+    @media only screen and (max-width: 37.5em) {
+      @content;
+    }
+  }
+  @if $breakpoint == tab-port {
+    /* 1000px */
+    @media only screen and (max-width: 62.5em) {
+      @content;
+    }
+  }
+  @if $breakpoint == tab-land {
+    /* 1200 */
+    @media only screen and (max-width: 75em) {
+      @content;
+    }
+  }
+}

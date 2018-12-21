@@ -5,6 +5,19 @@
   box-shadow: var(--shadow-dark);
   border-radius: 0.4rem;
   overflow: hidden;
+
+  @include respond(tab-land) {
+    max-width: 90rem;
+  }
+
+  @include respond(tab-port) {
+    max-width: 50rem;
+  }
+
+  @include respond(phone) {
+    max-width: 100%;
+    margin: 0;
+  }
 }
 
 .footer {
@@ -13,16 +26,38 @@
   display: flex;
   justify-content: center;
   align-content: center;
+
+  @include respond(phone) {
+    flex-direction: column;
+  }
+
+  &__link {
+    @include respond(phone) {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 2rem;
+    }
+  }
 }
 
 .container {
   background-color: var(--color-grey-light-3);
   display: flex;
 
+  @include respond(tab-port) {
+    flex-direction: column;
+  }
+
   &__primary {
     width: 60%;
+    padding: 3rem;
     display: flex;
     align-items: center;
+
+    @include respond(tab-port) {
+      width: 100%;
+    }
   }
 
   &__secondary {
@@ -34,6 +69,10 @@
       var(--color-primary-dark)
     );
     background-size: cover;
+
+    @include respond(tab-port) {
+      width: 100%;
+    }
   }
 }
 
