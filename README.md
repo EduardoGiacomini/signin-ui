@@ -8,7 +8,7 @@ A simple and beautiful one page sign-in template developed with HTML, CSS and Sa
 
 ![responsive-design](https://user-images.githubusercontent.com/31314944/50357998-fc44f680-053e-11e9-8ef8-904504810d0c.jpg)
 
-_Thanks Jamboe for the mockup._
+**Thanks _[Jamboe](https://www.jamboe.net/)_ for the awesome mockup.**
 
 ## Usage
 
