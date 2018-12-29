@@ -17,7 +17,7 @@ A simple and beautiful one page sign-in template developed with HTML, CSS and Sa
 1. Download or clone the repository;
 2. Navigate to the project folder: `cd signin-ui`;
 3. Install the dependencies: `npm install`;
-4. Run the project in developer server: `npm run start`.
+4. Run the project in developer server (Required: [live-server](https://www.npmjs.com/package/live-server)): `npm run start`.
 
 ### Build process
 
